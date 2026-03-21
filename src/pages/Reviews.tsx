@@ -13,7 +13,7 @@ const reviews = [
 
 export function Reviews() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
@@ -22,10 +22,10 @@ export function Reviews() {
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
             src="/removals-van-highway-uk.jpg" 
             alt="Happy customer" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>

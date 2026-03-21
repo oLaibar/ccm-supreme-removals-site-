@@ -64,7 +64,7 @@ const servicesList = [
 
 export function Services() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
@@ -73,10 +73,10 @@ export function Services() {
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
             src="/packing-boxes-house-removals-service.jpg" 
             alt="Movers packing boxes" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -108,7 +108,7 @@ export function Services() {
                 className="bg-white rounded-3xl shadow-premium hover:shadow-premium-hover transition-all duration-500 border border-slate-100/50 group hover:-translate-y-1 overflow-hidden flex flex-col"
               >
                 <div className="h-56 w-full relative overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-6 flex items-center gap-3">
                     <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-blue shadow-lg group-hover:bg-brand-accent group-hover:text-white transition-all duration-500">

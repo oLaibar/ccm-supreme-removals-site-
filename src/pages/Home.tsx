@@ -64,7 +64,7 @@ const reviews = [
 
 export function Home() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 1000], [0, 200]);
+  const y1 = useTransform(scrollY, [0, 1000], [0, 50]);
   const isMobile = useIsMobile();
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
 
@@ -74,10 +74,10 @@ export function Home() {
       <section className="relative min-h-[90vh] flex items-center pt-32 pb-40 lg:pt-48 lg:pb-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
             src="/ccm-removals-trucks-house.jpg" 
             alt="Professional movers" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/80 to-transparent"></div>
@@ -236,10 +236,10 @@ export function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
-                  className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-premium group aspect-square md:aspect-auto md:h-full cursor-pointer"
+                  className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-premium group h-64 md:h-full cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/removals-van-residential-moving-day.jpg", alt: "Residential moving day" })}
                 >
-                  <img src="/removals-van-residential-moving-day.jpg" alt="Residential moving day" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/removals-van-residential-moving-day.jpg" alt="Residential moving day" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </motion.div>
                 
@@ -248,10 +248,10 @@ export function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: isMobile ? 0 : 0.1 }}
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/furniture-wrapping-protection-removals.jpg", alt: "Furniture wrapping" })}
                 >
-                  <img src="/furniture-wrapping-protection-removals.jpg" alt="Furniture wrapping" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/furniture-wrapping-protection-removals.jpg" alt="Furniture wrapping" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </motion.div>
 
@@ -260,10 +260,10 @@ export function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: isMobile ? 0 : 0.2 }}
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/loading-moving-boxes.jpg", alt: "Loading moving boxes" })}
                 >
-                  <img src="/loading-moving-boxes.jpg" alt="Loading moving boxes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/loading-moving-boxes.jpg" alt="Loading moving boxes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </motion.div>
 
@@ -272,10 +272,10 @@ export function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: isMobile ? 0 : 0.3 }}
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/packing-boxes-house-removals-service.jpg", alt: "Packing boxes" })}
                 >
-                  <img src="/packing-boxes-house-removals-service.jpg" alt="Packing boxes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/packing-boxes-house-removals-service.jpg" alt="Packing boxes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </motion.div>
 
@@ -284,10 +284,10 @@ export function Home() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: isMobile ? 0 : 0.4 }}
-                  className="col-span-1 md:col-span-2 relative rounded-3xl overflow-hidden shadow-premium group aspect-square md:aspect-auto md:h-48 cursor-pointer"
+                  className="col-span-1 md:col-span-2 relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/removals-truck-loading-logistics.jpg", alt: "Truck loading logistics" })}
                 >
-                  <img src="/removals-truck-loading-logistics.jpg" alt="Truck loading logistics" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/removals-truck-loading-logistics.jpg" alt="Truck loading logistics" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </motion.div>
               </div>

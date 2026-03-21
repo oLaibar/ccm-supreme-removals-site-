@@ -7,7 +7,7 @@ import { useIsMobile } from "../hooks/useIsMobile";
 
 export function About() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
 
@@ -17,10 +17,10 @@ export function About() {
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
             src="/ccm-removals-vans-street.jpg" 
             alt="Movers" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -82,38 +82,38 @@ export function About() {
             >
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
                 <div 
-                  className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-premium group aspect-square md:aspect-auto md:h-full cursor-pointer"
+                  className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-premium group h-64 md:h-full cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/removals-truck-coastal-street-uk.jpg", alt: "CCM Removals truck on coastal street" })}
                 >
-                  <img src="/removals-truck-coastal-street-uk.jpg" alt="CCM Removals truck on coastal street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/removals-truck-coastal-street-uk.jpg" alt="CCM Removals truck on coastal street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/furniture-packed-ready-for-removal.jpg", alt: "Furniture packed ready for removal" })}
                 >
-                  <img src="/furniture-packed-ready-for-removal.jpg" alt="Furniture packed ready for removal" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/furniture-packed-ready-for-removal.jpg" alt="Furniture packed ready for removal" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/removals-truck-loaded-furniture-secured.png", alt: "Secured furniture in truck" })}
                 >
-                  <img src="/removals-truck-loaded-furniture-secured.png" alt="Secured furniture in truck" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/removals-truck-loaded-furniture-secured.png" alt="Secured furniture in truck" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
-                  onClick={() => setLightboxImage({ src: "/house-removals-trucks-outside-new-homes-uk.jpeg", alt: "House removals trucks outside new homes" })}
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
+                  onClick={() => setLightboxImage({ src: "/house-removals-trucks-outside-new-homes-uk.jpg", alt: "House removals trucks outside new homes" })}
                 >
-                  <img src="/house-removals-trucks-outside-new-homes-uk.jpeg" alt="House removals trucks outside new homes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/house-removals-trucks-outside-new-homes-uk.jpg" alt="House removals trucks outside new homes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="col-span-1 md:col-span-2 relative rounded-3xl overflow-hidden shadow-premium group aspect-square md:aspect-auto md:h-48 cursor-pointer"
+                  className="col-span-1 md:col-span-2 relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
                   onClick={() => setLightboxImage({ src: "/ccm-removals-vans-street.jpg", alt: "CCM Removals vans on street" })}
                 >
-                  <img src="/ccm-removals-vans-street.jpg" alt="CCM Removals vans on street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/ccm-removals-vans-street.jpg" alt="CCM Removals vans on street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
               </div>
