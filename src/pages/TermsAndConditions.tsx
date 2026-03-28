@@ -4,7 +4,7 @@ import { SEO } from "../components/SEO";
 export function TermsAndConditions() {
   return (
     <div className="w-full">
-      <SEO 
+      <SEO
         title="Terms and Conditions | CCM Supreme Removals"
         description="Read the terms and conditions for using CCM Supreme Removals services, including bookings, payments, liability, and storage."
         canonical="https://ccmsupremeremovals.co.uk/terms-and-conditions"
@@ -12,9 +12,9 @@ export function TermsAndConditions() {
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-28 pb-12 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <img 
-            src="/images/removals-truck-loading-logistics.jpg" 
-            alt="CCM Removals Trucks loading logistics" 
+          <img
+            src="/images/removals-truck-loading-logistics.jpg"
+            alt="CCM Removals Trucks loading logistics"
             className="w-full h-full object-cover"
           />
         </div>
@@ -115,7 +115,7 @@ export function TermsAndConditions() {
             <p className="text-slate-600 mb-6">
               If you have any questions or concerns regarding these Terms and Conditions, please contact us at <a href="mailto:info@ccmsupremeremovals.com" className="text-brand-accent hover:underline">info@ccmsupremeremovals.com</a>.
             </p>
-            
+
             <div className="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-500">
               Last updated: March 21, 2026
             </div>

@@ -19,7 +19,7 @@ export function Reviews() {
 
   return (
     <div className="w-full">
-      <SEO 
+      <SEO
         title="Customer Reviews | CCM Supreme Removals"
         description="Read what our satisfied customers have to say about their stress-free moving experience with CCM Supreme Removals. 5-star rated service."
         canonical="https://ccmsupremeremovals.co.uk/reviews"
@@ -27,10 +27,10 @@ export function Reviews() {
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <motion.img 
+          <motion.img
             style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
-            src="/images/removals-van-highway-uk.jpg" 
-            alt="Happy customer" 
+            src="/images/removals-van-highway-uk.jpg"
+            alt="Happy customer"
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
@@ -45,7 +45,7 @@ export function Reviews() {
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-8">
               See what our clients have to say about their experience with CCM Supreme Removals.
             </p>
-            
+
             <div className="inline-flex flex-col items-center bg-white p-6 rounded-3xl shadow-2xl border border-slate-100">
               <div className="flex items-center gap-4 mb-3">
                 <span className="text-5xl font-display font-bold text-brand-navy">4.8</span>
@@ -69,7 +69,7 @@ export function Reviews() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {reviews.map((review, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export function Reviews() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
+            <a
               href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
@@ -110,7 +110,7 @@ export function Reviews() {
               <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
               READ ALL REVIEWS
             </a>
-            <a 
+            <a
               href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"

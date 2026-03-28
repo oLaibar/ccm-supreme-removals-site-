@@ -37,7 +37,7 @@ export function Tips() {
 
   return (
     <div className="w-full">
-      <SEO 
+      <SEO
         title="Moving Tips & Advice | CCM Supreme Removals"
         description="Expert moving tips and advice to help you prepare for a smooth, stress-free house move. Learn how to pack, declutter, and plan your relocation."
         canonical="https://ccmsupremeremovals.co.uk/tips"
@@ -45,10 +45,10 @@ export function Tips() {
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <motion.img 
+          <motion.img
             style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
-            src="/images/packing-boxes-house-removals-service.jpg" 
-            alt="Moving boxes" 
+            src="/images/packing-boxes-house-removals-service.jpg"
+            alt="Moving boxes"
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
@@ -73,7 +73,7 @@ export function Tips() {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 gap-12">
               {tipsList.map((tip, idx) => (
-                <motion.div 
+                <motion.div
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

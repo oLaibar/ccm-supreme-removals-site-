@@ -9,6 +9,7 @@ export function PrivacyPolicy() {
         description="Learn how CCM Supreme Removals collects, uses, and protects your personal information when you use our website and services."
         canonical="https://ccmsupremeremovals.co.uk/privacy-policy"
       />
+
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-28 pb-12 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
@@ -17,14 +18,7 @@ export function PrivacyPolicy() {
             alt="CCM Removals Trucks loading logistics" 
             className="w-full h-full object-cover"
           />
-        </div>
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-4">Privacy Policy</h1>
+        </div>            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-4">Privacy Policy</h1>
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto">
               How we collect, use, and protect your personal information.
             </p>

@@ -72,7 +72,7 @@ export function Home() {
 
   return (
     <div className="w-full">
-      <SEO 
+      <SEO
         title="CCM Supreme Removals | Professional House Removals & Man and Van UK"
         description="Top-rated removals company in the UK offering stress-free house removals, man and van services, office relocations, and professional packing. Get a free quote today!"
         canonical="https://ccmsupremeremovals.co.uk/"
@@ -95,10 +95,10 @@ export function Home() {
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center pt-32 pb-40 lg:pt-48 lg:pb-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <motion.img 
+          <motion.img
             style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
-            src="/images/ccm-removals-trucks-house.jpg" 
-            alt="Professional movers" 
+            src="/images/ccm-removals-trucks-house.jpg"
+            alt="Professional movers"
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
@@ -124,7 +124,7 @@ export function Home() {
               <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
                 Experience a seamless transition to your new home or office. Fully insured, highly trained, and dedicated to handling your belongings with supreme care.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button href="/quote" size="lg" icon={<ArrowRight size={20} />} className="w-full sm:w-auto shadow-premium-hover">
                   GET A FREE QUOTE
@@ -167,7 +167,7 @@ export function Home() {
               { icon: <Clock className="text-brand-accent w-8 h-8" />, title: "Punctual & Reliable" },
               { icon: <MapPin className="text-brand-accent w-8 h-8" />, title: "UK Wide Coverage" }
             ].map((item, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -194,7 +194,7 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -213,7 +213,7 @@ export function Home() {
               </motion.div>
             ))}
           </div>
-          
+
           <div className="mt-16 text-center">
             <Button href="/services" variant="secondary" className="w-full sm:w-auto">VIEW ALL SERVICES</Button>
           </div>
@@ -225,7 +225,7 @@ export function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {stats.map((stat, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -283,7 +283,7 @@ export function Home() {
                   <img src="/images/removals-van-residential-moving-day.jpg" alt="Residential moving day" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </motion.div>
-                
+
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -347,9 +347,8 @@ export function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 relative">
-            {/* Connecting line for desktop */}
             <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-[2px] bg-slate-100 z-0">
-              <motion.div 
+              <motion.div
                 className="h-full bg-brand-accent"
                 initial={{ width: "0%" }}
                 whileInView={{ width: "100%" }}
@@ -406,7 +405,7 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {reviews.map((review, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -434,7 +433,7 @@ export function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
+            <a
               href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
@@ -443,7 +442,7 @@ export function Home() {
               <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5" />
               READ MORE REVIEWS
             </a>
-            <a 
+            <a
               href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
@@ -486,7 +485,7 @@ export function Home() {
           <Truck size={400} />
         </div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -509,11 +508,11 @@ export function Home() {
         </div>
       </section>
 
-      <Lightbox 
-        isOpen={!!lightboxImage} 
-        imageSrc={lightboxImage?.src || ""} 
-        imageAlt={lightboxImage?.alt || ""} 
-        onClose={() => setLightboxImage(null)} 
+      <Lightbox
+        isOpen={!!lightboxImage}
+        imageSrc={lightboxImage?.src || ""}
+        imageAlt={lightboxImage?.alt || ""}
+        onClose={() => setLightboxImage(null)}
       />
     </div>
   );

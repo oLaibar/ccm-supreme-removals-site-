@@ -43,6 +43,24 @@ export default function App() {
         <BackToTopButton />
       </Router>
     </HelmetProvider>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
+          <Route path="tips" element={<Tips />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="reviews" element={<Reviews />} />
+          <Route path="quote" element={<Quote />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="faq" element={<FAQ />} />
+        </Route>
+      </Routes>
+      <WhatsAppButton />
+      <BackToTopButton />
+    </Router>
   );
 }
-
