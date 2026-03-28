@@ -4,23 +4,29 @@ import { Button } from "../components/Button";
 import { useState } from "react";
 import { Lightbox } from "../components/Lightbox";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { SEO } from "../components/SEO";
 
 export function About() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
 
   return (
     <div className="w-full">
+      <SEO 
+        title="About Us | CCM Supreme Removals | Trusted UK Movers"
+        description="Learn more about CCM Supreme Removals, your trusted partner for professional, reliable, and stress-free house and office removals across the UK."
+        canonical="https://ccmsupremeremovals.co.uk/about"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
-            src="/ccm-removals-vans-street.jpg" 
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
+            src="/images/ccm-removals-vans-street.jpg" 
             alt="Movers" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -48,8 +54,8 @@ export function About() {
               viewport={{ once: true }}
               className="lg:w-1/2"
             >
-              <h2 className="text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Our Story</h2>
-              <h3 className="text-4xl font-display font-bold text-brand-navy mb-6">Excellence in Every Move</h3>
+              <span className="block text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Our Story</span>
+              <h2 className="text-4xl font-display font-bold text-brand-navy mb-6">Excellence in Every Move</h2>
               <p className="text-slate-600 text-lg mb-6 leading-relaxed">
                 At CCM Supreme Removals, we understand that moving can be one of life's most stressful events. That's why we've built our company on a foundation of reliability, care, and supreme professionalism.
               </p>
@@ -82,38 +88,38 @@ export function About() {
             >
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
                 <div 
-                  className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-premium group aspect-square md:aspect-auto md:h-full cursor-pointer"
-                  onClick={() => setLightboxImage({ src: "/removals-truck-coastal-street-uk.jpg", alt: "CCM Removals truck on coastal street" })}
+                  className="col-span-2 row-span-2 relative rounded-3xl overflow-hidden shadow-premium group h-64 md:h-full cursor-pointer"
+                  onClick={() => setLightboxImage({ src: "/images/removals-truck-coastal-street-uk.jpg", alt: "CCM Removals truck on coastal street" })}
                 >
-                  <img src="/removals-truck-coastal-street-uk.jpg" alt="CCM Removals truck on coastal street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/images/removals-truck-coastal-street-uk.jpg" alt="CCM Removals truck on coastal street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
-                  onClick={() => setLightboxImage({ src: "/furniture-packed-ready-for-removal.jpg", alt: "Furniture packed ready for removal" })}
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
+                  onClick={() => setLightboxImage({ src: "/images/furniture-packed-ready-for-removal.jpg", alt: "Furniture packed ready for removal" })}
                 >
-                  <img src="/furniture-packed-ready-for-removal.jpg" alt="Furniture packed ready for removal" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/images/furniture-packed-ready-for-removal.jpg" alt="Furniture packed ready for removal" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
-                  onClick={() => setLightboxImage({ src: "/removals-truck-loaded-furniture-secured.png", alt: "Secured furniture in truck" })}
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
+                  onClick={() => setLightboxImage({ src: "/images/removals-truck-loaded-furniture-secured.png", alt: "Secured furniture in truck" })}
                 >
-                  <img src="/removals-truck-loaded-furniture-secured.png" alt="Secured furniture in truck" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/images/removals-truck-loaded-furniture-secured.png" alt="Secured furniture in truck" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="relative rounded-3xl overflow-hidden shadow-premium group aspect-square cursor-pointer"
-                  onClick={() => setLightboxImage({ src: "/house-removals-trucks-outside-new-homes-uk.jpeg", alt: "House removals trucks outside new homes" })}
+                  className="relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
+                  onClick={() => setLightboxImage({ src: "/images/house-removals-trucks-outside-new-homes-uk.jpg", alt: "House removals trucks outside new homes" })}
                 >
-                  <img src="/house-removals-trucks-outside-new-homes-uk.jpeg" alt="House removals trucks outside new homes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/images/house-removals-trucks-outside-new-homes-uk.jpg" alt="House removals trucks outside new homes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
                 <div 
-                  className="col-span-1 md:col-span-2 relative rounded-3xl overflow-hidden shadow-premium group aspect-square md:aspect-auto md:h-48 cursor-pointer"
-                  onClick={() => setLightboxImage({ src: "/ccm-removals-vans-street.jpg", alt: "CCM Removals vans on street" })}
+                  className="col-span-1 md:col-span-2 relative rounded-3xl overflow-hidden shadow-premium group h-40 md:h-56 cursor-pointer"
+                  onClick={() => setLightboxImage({ src: "/images/ccm-removals-vans-street.jpg", alt: "CCM Removals vans on street" })}
                 >
-                  <img src="/ccm-removals-vans-street.jpg" alt="CCM Removals vans on street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src="/images/ccm-removals-vans-street.jpg" alt="CCM Removals vans on street" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-brand-navy/10 group-hover:bg-brand-navy/0 transition-colors duration-500"></div>
                 </div>
               </div>
@@ -126,8 +132,8 @@ export function About() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Core Values</h2>
-            <h3 className="text-4xl font-display font-bold text-brand-navy mb-6">What Drives Us</h3>
+            <span className="block text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Core Values</span>
+            <h2 className="text-4xl font-display font-bold text-brand-navy mb-6">What Drives Us</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -147,7 +153,7 @@ export function About() {
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-brand-accent mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500">
                   {value.icon}
                 </div>
-                <h4 className="text-xl font-display font-bold text-brand-navy mb-4">{value.title}</h4>
+                <h3 className="text-xl font-display font-bold text-brand-navy mb-4">{value.title}</h3>
                 <p className="text-slate-600 leading-relaxed">{value.desc}</p>
               </motion.div>
             ))}

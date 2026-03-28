@@ -55,7 +55,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 z-50 transition-transform hover:scale-105">
             <img 
-              src="/logo.png" 
+              src="/images/logo.png" 
               alt="CCM Supreme Removals" 
               className="h-24 md:h-36 w-auto object-contain" 
               style={{ filter: 'drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.85)) drop-shadow(0px 0px 4px rgba(255, 255, 255, 1))' }}

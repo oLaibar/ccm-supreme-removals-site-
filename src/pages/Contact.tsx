@@ -2,22 +2,28 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from "lucide-react";
 import { Button } from "../components/Button";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { SEO } from "../components/SEO";
 
 export function Contact() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Contact Us | CCM Supreme Removals"
+        description="Get in touch with CCM Supreme Removals for a free quote on your house move, office relocation, or packing services. Call us or send a message today."
+        canonical="https://ccmsupremeremovals.co.uk/contact"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
-            src="/ccm-removals-vans-street.jpg" 
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
+            src="/images/ccm-removals-vans-street.jpg" 
             alt="Contact us" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -44,8 +50,8 @@ export function Contact() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Get In Touch</h2>
-              <h3 className="text-4xl font-display font-bold text-brand-navy mb-10">We're Here to Help</h3>
+              <span className="block text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Get In Touch</span>
+              <h2 className="text-4xl font-display font-bold text-brand-navy mb-10">We're Here to Help</h2>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-6">
@@ -53,7 +59,7 @@ export function Contact() {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">Phone</h4>
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">Office / Landline</h3>
                     <a href="tel:01582292303" className="text-slate-600 hover:text-brand-accent font-medium transition-colors">01582 292303</a>
                   </div>
                 </div>
@@ -65,7 +71,7 @@ export function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">WhatsApp Business</h4>
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">Mobile / WhatsApp</h3>
                     <a href="https://wa.me/447838191826" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-brand-accent font-medium transition-colors">+44 7838 191826</a>
                   </div>
                 </div>
@@ -75,7 +81,7 @@ export function Contact() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">Email</h4>
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">Email</h3>
                     <a href="mailto:info@ccmsupremeremovals.com" className="text-slate-600 hover:text-brand-accent font-medium transition-colors">info@ccmsupremeremovals.com</a>
                   </div>
                 </div>
@@ -85,7 +91,7 @@ export function Contact() {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">Location</h4>
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">Location</h3>
                     <p className="text-slate-600 font-medium">Luton, United Kingdom</p>
                   </div>
                 </div>
@@ -95,7 +101,7 @@ export function Contact() {
                     <Clock size={24} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">Working Hours</h4>
+                    <h3 className="text-xl font-bold text-brand-navy mb-2">Working Hours</h3>
                     <p className="text-slate-600 mb-1 font-medium">Mon - Fri: 08:00 - 18:00</p>
                     <p className="text-slate-600 mb-1 font-medium">Saturday: 10:00 - 14:00</p>
                     <p className="text-slate-600 font-medium">Sunday: Closed</p>
@@ -104,7 +110,7 @@ export function Contact() {
               </div>
 
               <div className="mt-12 pt-8 border-t border-slate-200">
-                <h4 className="text-lg font-bold text-brand-navy mb-4">Follow Us</h4>
+                <h3 className="text-lg font-bold text-brand-navy mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <a href="https://www.facebook.com/profile.php?id=100076414621047" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-navy hover:bg-brand-accent hover:text-white transition-colors shadow-sm">
                     <Facebook size={20} />
@@ -127,7 +133,7 @@ export function Contact() {
               viewport={{ once: true }}
               className="bg-white p-6 sm:p-10 rounded-3xl shadow-premium border border-slate-100"
             >
-              <h3 className="text-3xl font-display font-bold text-brand-navy mb-8">Send a Message</h3>
+              <h2 className="text-3xl font-display font-bold text-brand-navy mb-8">Send a Message</h2>
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">Full Name</label>

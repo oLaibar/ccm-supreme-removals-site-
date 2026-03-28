@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { Star, Quote } from "lucide-react";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { SEO } from "../components/SEO";
 
 const reviews = [
   { name: "Sarah Jenkins", text: "Absolutely fantastic service. The team was punctual, polite, and handled our fragile items with immense care. Highly recommended!", rating: 5, date: "2 weeks ago" },
@@ -13,19 +14,24 @@ const reviews = [
 
 export function Reviews() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Customer Reviews | CCM Supreme Removals"
+        description="Read what our satisfied customers have to say about their stress-free moving experience with CCM Supreme Removals. 5-star rated service."
+        canonical="https://ccmsupremeremovals.co.uk/reviews"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
-            src="/removals-van-highway-uk.jpg" 
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
+            src="/images/removals-van-highway-uk.jpg" 
             alt="Happy customer" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -84,7 +90,7 @@ export function Reviews() {
                       {review.name.charAt(0)}
                     </div>
                     <div>
-                      <h5 className="font-bold text-white">{review.name}</h5>
+                      <h2 className="font-bold text-white">{review.name}</h2>
                       <span className="text-xs text-slate-300 uppercase tracking-wider font-medium">Verified Customer</span>
                     </div>
                   </div>
@@ -96,7 +102,7 @@ export function Reviews() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="https://www.google.com/search?sca_esv=d1a2c1eff646079b&sxsrf=AE3TifOyixhGi_w0w-sazmVg5V3u3tZFhQ:1762300841468&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2aIuwyAm2PkKvsW7mpL0UMatCavGO4kbm0pRR1CerfqEkzb6B2HBDH_JP2hojV6r_fA61ae8j9koa7kuPb5jd5oCeElXiHPSEPaSLBx6plSCIArOA%3D%3D&q=CCM+Supreme+Removals+Recenzii&sa=X&ved=2ahUKEwj7qJKd2tmQAxWgW0EAHcunLeQQ0bkNegQIIRAE&biw=1920&bih=911&dpr=1"
+              href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-brand-blue text-white hover:bg-blue-900 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
@@ -105,7 +111,7 @@ export function Reviews() {
               READ ALL REVIEWS
             </a>
             <a 
-              href="https://www.google.com/search?newwindow=1&sca_esv=7ffe021d2eae6c1f&authuser=4&sxsrf=ANbL-n67WByunzIYISPTLt4-wAY8mkscBg:1774054234976&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORPoA7iWHvSmLjLOa9T2642hE0WvSFnxIGH-GizZsyo8aKtD_0YLuChyMo9jH_Eu81OlAosVgO4VBrmi1GGLfrMprwD2bPCeAdJHAl4mxiIkGvKoNA%3D%3D&q=CCM+Supreme+Removals+Reviews&sa=X&ved=2ahUKEwjdtPOD46-TAxWjV0EAHaR3IVEQ0bkNegQIIBAH&biw=1920&bih=911&dpr=1"
+              href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-navy border-2 border-brand-navy hover:bg-slate-50 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"

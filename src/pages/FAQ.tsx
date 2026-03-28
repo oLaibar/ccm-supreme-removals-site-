@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, HelpCircle, ArrowRight, PoundSterling, Package, ShieldCheck, Warehouse, Calendar, MapPin, Sofa } from "lucide-react";
 import { Button } from "../components/Button";
+import { SEO } from "../components/SEO";
 
 const faqs = [
   {
@@ -62,7 +63,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ faq, isOpen, onClick }) => {
           <div className="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center shrink-0">
             {faq.icon}
           </div>
-          <h3 className="text-lg font-bold text-brand-navy pr-4">{faq.question}</h3>
+          <h2 className="text-lg font-bold text-brand-navy pr-4">{faq.question}</h2>
         </div>
         <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'bg-brand-accent text-white rotate-180' : 'bg-slate-50 text-slate-400'}`}>
           <ChevronDown size={20} />
@@ -91,9 +92,14 @@ export function FAQ() {
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Frequently Asked Questions | CCM Supreme Removals"
+        description="Find answers to common questions about our house removal, packing, and storage services. Learn more about costs, insurance, and how to prepare for your move."
+        canonical="https://ccmsupremeremovals.co.uk/faq"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20 bg-[url('/packing-boxes-house-removals-service.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 z-0 opacity-20 bg-[url('/images/packing-boxes-house-removals-service.jpg')] bg-cover bg-center"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

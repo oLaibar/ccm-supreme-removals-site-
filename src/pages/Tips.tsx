@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { CheckCircle2, Lightbulb, Package, Calendar } from "lucide-react";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { SEO } from "../components/SEO";
 
 const tipsList = [
   {
@@ -31,19 +32,24 @@ const tipsList = [
 
 export function Tips() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Moving Tips & Advice | CCM Supreme Removals"
+        description="Expert moving tips and advice to help you prepare for a smooth, stress-free house move. Learn how to pack, declutter, and plan your relocation."
+        canonical="https://ccmsupremeremovals.co.uk/tips"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
-            src="/packing-boxes-house-removals-service.jpg" 
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
+            src="/images/packing-boxes-house-removals-service.jpg" 
             alt="Moving boxes" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -79,7 +85,7 @@ export function Tips() {
                     {tip.icon}
                   </div>
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-brand-navy mb-4">{tip.title}</h3>
+                    <h2 className="text-2xl font-display font-bold text-brand-navy mb-4">{tip.title}</h2>
                     <p className="text-slate-600 leading-relaxed mb-6">{tip.desc}</p>
                     <ul className="space-y-3">
                       {tip.points.map((point, pIdx) => (

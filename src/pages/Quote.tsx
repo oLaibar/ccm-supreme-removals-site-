@@ -1,22 +1,28 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { CheckCircle2 } from "lucide-react";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { SEO } from "../components/SEO";
 
 export function Quote() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Get a Free Removals Quote | CCM Supreme Removals"
+        description="Request a free, no-obligation quote for your house move, office relocation, or packing services. Fast response, no hidden fees, fully insured."
+        canonical="https://ccmsupremeremovals.co.uk/quote"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-28 pb-12 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
-            src="/removals-truck-loading-logistics.jpg" 
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
+            src="/images/removals-truck-loading-logistics.jpg" 
             alt="CCM Removals Trucks" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>

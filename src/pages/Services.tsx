@@ -2,81 +2,73 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Home, Building2, Package, Truck, Wrench, Box, MapPin, Archive } from "lucide-react";
 import { Button } from "../components/Button";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { SEO } from "../components/SEO";
 
 const servicesList = [
   {
     icon: <Home size={24} />,
-    title: "Home Removals",
-    desc: "Whether you're moving to a new flat or a large family house, our expert team ensures your belongings are transported safely and efficiently.",
-    features: ["Fully Insured", "Careful Handling", "Stress-Free"],
-    image: "/removals-van-residential-moving-day.jpg"
+    title: "Local Removals",
+    desc: "Fast, reliable, and efficient house moves across Luton and surrounding areas. Our expert team ensures your belongings are transported safely.",
+    features: ["Fully Insured", "Careful Handling", "Local Experts"],
+    image: "/images/removals-van-residential-moving-day.jpg"
   },
   {
     icon: <MapPin size={24} />,
-    title: "Local Moving",
-    desc: "Fast, reliable, and efficient local moving services across Luton and surrounding areas. We know the local routes to get you settled quickly.",
-    features: ["Quick Turnaround", "Local Experts", "Affordable Rates"],
-    image: "/ccm-removals-vans-street.jpg"
-  },
-  {
-    icon: <Truck size={24} />,
-    title: "Long Distance Moving",
+    title: "Long Distance Moves",
     desc: "Moving across the country? We provide dedicated long-distance removal services, ensuring your belongings arrive safely, no matter the distance.",
     features: ["Dedicated Vehicles", "Route Planning", "Nationwide Coverage"],
-    image: "/removals-van-highway-uk.jpg"
+    image: "/images/removals-van-highway-uk.jpg"
   },
   {
     icon: <Building2 size={24} />,
-    title: "Business/Corporate Moving",
-    desc: "Minimize downtime with our professional office relocation services. We coordinate with your team to ensure a seamless transition.",
-    features: ["Weekend Moves", "IT Equipment", "Minimal Disruption"],
-    image: "/removals-truck-night-service.jpg"
+    title: "Office Relocations",
+    desc: "Minimise downtime with our professional corporate relocation services. We coordinate with your team to ensure a seamless transition.",
+    features: ["Weekend Moves", "IT Equipment Care", "Minimal Disruption"],
+    image: "/images/removals-truck-night-service.jpg"
   },
   {
     icon: <Package size={24} />,
-    title: "Packing & Unpacking",
-    desc: "Save time and stress with our comprehensive packing services. We use high-quality materials to protect your items.",
+    title: "Packing Services",
+    desc: "Save time and stress with our comprehensive packing services. We use high-quality materials to protect your fragile and valuable items.",
     features: ["Premium Materials", "Fragile Item Care", "Full/Partial Packing"],
-    image: "/furniture-wrapping-protection-removals.jpg"
-  },
-  {
-    icon: <Wrench size={24} />,
-    title: "Dismantle & Reassemble",
-    desc: "Don't struggle with flat-pack furniture or large beds. Our team is equipped with the right tools and expertise to safely dismantle and reassemble.",
-    features: ["Expert Tools", "Beds & Wardrobes", "Safe Reassembly"],
-    image: "/furniture-assembly-service.jpg"
+    image: "/images/furniture-wrapping-protection-removals.jpg"
   },
   {
     icon: <Archive size={24} />,
-    title: "Storage Services",
-    desc: "Need extra space? We offer secure, climate-controlled storage solutions for short or long-term needs.",
-    features: ["Secure Facilities", "Flexible Terms", "Climate Controlled"],
-    image: "/removals-storage-boxes-secure-storage.jpg"
+    title: "Storage Solutions",
+    desc: "Need extra space? We offer safe, secure, and flexible storage options for short or long-term needs while you transition.",
+    features: ["Secure Facilities", "Flexible Terms", "Clean & Dry"],
+    image: "/images/removals-storage-boxes-secure-storage.jpg"
   },
   {
-    icon: <Truck size={24} />,
-    title: "Man & Van",
-    desc: "Perfect for smaller moves, single item transport, or student relocations. Get the same professional service and care at a cost-effective rate.",
-    features: ["Hourly Rates", "Flexible Booking", "Professional Driver"],
-    image: "/removals-truck-coastal-street-uk.jpg"
+    icon: <Wrench size={24} />,
+    title: "Furniture Assembly",
+    desc: "Don't struggle with flat-pack furniture or large beds. Our team is equipped with the right tools to safely dismantle and reassemble your items.",
+    features: ["Expert Tools", "Beds & Wardrobes", "Safe Reassembly"],
+    image: "/images/furniture-assembly-service.jpg"
   }
 ];
 
 export function Services() {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Our Services | House Removals, Packing & Storage | CCM Supreme Removals"
+        description="Explore our range of professional moving services including local and long-distance removals, office relocations, packing, and secure storage solutions."
+        canonical="https://ccmsupremeremovals.co.uk/services"
+      />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <motion.img 
-            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.1 }}
-            src="/packing-boxes-house-removals-service.jpg" 
+            style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
+            src="/images/packing-boxes-house-removals-service.jpg" 
             alt="Movers packing boxes" 
-            className="w-full h-full object-cover origin-top"
+            className="w-full h-full object-cover"
             fetchPriority="high"
           />
         </div>
@@ -108,13 +100,13 @@ export function Services() {
                 className="bg-white rounded-3xl shadow-premium hover:shadow-premium-hover transition-all duration-500 border border-slate-100/50 group hover:-translate-y-1 overflow-hidden flex flex-col"
               >
                 <div className="h-56 w-full relative overflow-hidden">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 via-brand-navy/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-6 flex items-center gap-3">
                     <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-blue shadow-lg group-hover:bg-brand-accent group-hover:text-white transition-all duration-500">
                       {service.icon}
                     </div>
-                    <h3 className="text-xl font-display font-bold text-white">{service.title}</h3>
+                    <h2 className="text-xl font-display font-bold text-white">{service.title}</h2>
                   </div>
                 </div>
                 
