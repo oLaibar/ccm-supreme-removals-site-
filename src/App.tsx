@@ -15,8 +15,9 @@ import { Tips } from "./pages/Tips";
 import { Contact } from "./pages/Contact";
 import { Reviews } from "./pages/Reviews";
 import { Quote } from "./pages/Quote";
-import { PrivacyTerms } from "./pages/PrivacyTerms";
 import { FAQ } from "./pages/FAQ";
+import { TermsAndConditions } from "./pages/TermsAndConditions";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -31,7 +32,8 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="reviews" element={<Reviews />} />
           <Route path="quote" element={<Quote />} />
-          <Route path="privacy-terms" element={<PrivacyTerms />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="faq" element={<FAQ />} />
         </Route>
       </Routes>

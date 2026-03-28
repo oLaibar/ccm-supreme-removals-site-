@@ -96,7 +96,7 @@ export function Reviews() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="https://www.google.com/search?sca_esv=d1a2c1eff646079b&sxsrf=AE3TifOyixhGi_w0w-sazmVg5V3u3tZFhQ:1762300841468&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2aIuwyAm2PkKvsW7mpL0UMatCavGO4kbm0pRR1CerfqEkzb6B2HBDH_JP2hojV6r_fA61ae8j9koa7kuPb5jd5oCeElXiHPSEPaSLBx6plSCIArOA%3D%3D&q=CCM+Supreme+Removals+Recenzii&sa=X&ved=2ahUKEwj7qJKd2tmQAxWgW0EAHcunLeQQ0bkNegQIIRAE&biw=1920&bih=911&dpr=1"
+              href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-brand-blue text-white hover:bg-blue-900 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
@@ -105,7 +105,7 @@ export function Reviews() {
               READ ALL REVIEWS
             </a>
             <a 
-              href="https://www.google.com/search?newwindow=1&sca_esv=7ffe021d2eae6c1f&authuser=4&sxsrf=ANbL-n67WByunzIYISPTLt4-wAY8mkscBg:1774054234976&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORPoA7iWHvSmLjLOa9T2642hE0WvSFnxIGH-GizZsyo8aKtD_0YLuChyMo9jH_Eu81OlAosVgO4VBrmi1GGLfrMprwD2bPCeAdJHAl4mxiIkGvKoNA%3D%3D&q=CCM+Supreme+Removals+Reviews&sa=X&ved=2ahUKEwjdtPOD46-TAxWjV0EAHaR3IVEQ0bkNegQIIBAH&biw=1920&bih=911&dpr=1"
+              href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-navy border-2 border-brand-navy hover:bg-slate-50 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"

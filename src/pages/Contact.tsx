@@ -53,7 +53,7 @@ export function Contact() {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">Phone</h4>
+                    <h4 className="text-xl font-bold text-brand-navy mb-2">Office / Landline</h4>
                     <a href="tel:01582292303" className="text-slate-600 hover:text-brand-accent font-medium transition-colors">01582 292303</a>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-brand-navy mb-2">WhatsApp Business</h4>
+                    <h4 className="text-xl font-bold text-brand-navy mb-2">Mobile / WhatsApp</h4>
                     <a href="https://wa.me/447838191826" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-brand-accent font-medium transition-colors">+44 7838 191826</a>
                   </div>
                 </div>

@@ -6,59 +6,45 @@ import { useIsMobile } from "../hooks/useIsMobile";
 const servicesList = [
   {
     icon: <Home size={24} />,
-    title: "Home Removals",
-    desc: "Whether you're moving to a new flat or a large family house, our expert team ensures your belongings are transported safely and efficiently.",
-    features: ["Fully Insured", "Careful Handling", "Stress-Free"],
+    title: "Local Removals",
+    desc: "Fast, reliable, and efficient house moves across Luton and surrounding areas. Our expert team ensures your belongings are transported safely.",
+    features: ["Fully Insured", "Careful Handling", "Local Experts"],
     image: "/removals-van-residential-moving-day.jpg"
   },
   {
     icon: <MapPin size={24} />,
-    title: "Local Moving",
-    desc: "Fast, reliable, and efficient local moving services across Luton and surrounding areas. We know the local routes to get you settled quickly.",
-    features: ["Quick Turnaround", "Local Experts", "Affordable Rates"],
-    image: "/ccm-removals-vans-street.jpg"
-  },
-  {
-    icon: <Truck size={24} />,
-    title: "Long Distance Moving",
+    title: "Long Distance Moves",
     desc: "Moving across the country? We provide dedicated long-distance removal services, ensuring your belongings arrive safely, no matter the distance.",
     features: ["Dedicated Vehicles", "Route Planning", "Nationwide Coverage"],
     image: "/removals-van-highway-uk.jpg"
   },
   {
     icon: <Building2 size={24} />,
-    title: "Business/Corporate Moving",
-    desc: "Minimize downtime with our professional office relocation services. We coordinate with your team to ensure a seamless transition.",
-    features: ["Weekend Moves", "IT Equipment", "Minimal Disruption"],
+    title: "Office Relocations",
+    desc: "Minimise downtime with our professional corporate relocation services. We coordinate with your team to ensure a seamless transition.",
+    features: ["Weekend Moves", "IT Equipment Care", "Minimal Disruption"],
     image: "/removals-truck-night-service.jpg"
   },
   {
     icon: <Package size={24} />,
-    title: "Packing & Unpacking",
-    desc: "Save time and stress with our comprehensive packing services. We use high-quality materials to protect your items.",
+    title: "Packing Services",
+    desc: "Save time and stress with our comprehensive packing services. We use high-quality materials to protect your fragile and valuable items.",
     features: ["Premium Materials", "Fragile Item Care", "Full/Partial Packing"],
     image: "/furniture-wrapping-protection-removals.jpg"
   },
   {
-    icon: <Wrench size={24} />,
-    title: "Dismantle & Reassemble",
-    desc: "Don't struggle with flat-pack furniture or large beds. Our team is equipped with the right tools and expertise to safely dismantle and reassemble.",
-    features: ["Expert Tools", "Beds & Wardrobes", "Safe Reassembly"],
-    image: "/furniture-assembly-service.jpg"
-  },
-  {
     icon: <Archive size={24} />,
-    title: "Storage Services",
-    desc: "Need extra space? We offer secure, climate-controlled storage solutions for short or long-term needs.",
-    features: ["Secure Facilities", "Flexible Terms", "Climate Controlled"],
+    title: "Storage Solutions",
+    desc: "Need extra space? We offer safe, secure, and flexible storage options for short or long-term needs while you transition.",
+    features: ["Secure Facilities", "Flexible Terms", "Clean & Dry"],
     image: "/removals-storage-boxes-secure-storage.jpg"
   },
   {
-    icon: <Truck size={24} />,
-    title: "Man & Van",
-    desc: "Perfect for smaller moves, single item transport, or student relocations. Get the same professional service and care at a cost-effective rate.",
-    features: ["Hourly Rates", "Flexible Booking", "Professional Driver"],
-    image: "/removals-truck-coastal-street-uk.jpg"
+    icon: <Wrench size={24} />,
+    title: "Furniture Assembly",
+    desc: "Don't struggle with flat-pack furniture or large beds. Our team is equipped with the right tools to safely dismantle and reassemble your items.",
+    features: ["Expert Tools", "Beds & Wardrobes", "Safe Reassembly"],
+    image: "/furniture-assembly-service.jpg"
   }
 ];
 

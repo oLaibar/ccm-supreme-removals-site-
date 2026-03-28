@@ -42,10 +42,11 @@ const stats = [
 ];
 
 const services = [
-  { icon: <HomeIcon size={32} />, title: "Home Removals", desc: "Stress-free house moves tailored to your needs." },
-  { icon: <Building2 size={32} />, title: "Business Moving", desc: "Efficient corporate relocations with minimal downtime." },
-  { icon: <Package size={32} />, title: "Packing Services", desc: "Professional packing and unpacking for ultimate care." },
-  { icon: <Truck size={32} />, title: "Man & Van", desc: "Flexible, cost-effective transport for smaller moves." },
+  { icon: <HomeIcon size={32} />, title: "Local Removals", desc: "Stress-free house moves tailored to your needs within the local area." },
+  { icon: <MapPin size={32} />, title: "Long Distance Moves", desc: "Reliable and secure transportation across the UK and Europe." },
+  { icon: <Building2 size={32} />, title: "Office Relocations", desc: "Efficient corporate relocations designed to minimise business downtime." },
+  { icon: <Package size={32} />, title: "Packing Services", desc: "Professional packing and unpacking to ensure ultimate care for your items." },
+  { icon: <Truck size={32} />, title: "Storage Solutions", desc: "Safe, secure, and flexible storage options for short or long-term needs." },
 ];
 
 const steps = [
@@ -104,12 +105,31 @@ export function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button href="/quote" size="lg" icon={<ArrowRight size={20} />} className="w-full sm:w-auto">
+                <Button href="/quote" size="lg" icon={<ArrowRight size={20} />} className="w-full sm:w-auto shadow-premium-hover">
                   GET A FREE QUOTE
                 </Button>
                 <Button href="tel:01582292303" variant="outline" size="lg" className="w-full sm:w-auto border-white/30 text-white hover:bg-white hover:text-brand-navy">
                   CALL 01582 292303
                 </Button>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-8 text-sm font-medium text-slate-200">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck size={18} className="text-brand-accent" />
+                  <span>Fully Insured</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock size={18} className="text-brand-accent" />
+                  <span>Same-Day Moves</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users size={18} className="text-brand-accent" />
+                  <span>2 Men & Van Service</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin size={18} className="text-brand-accent" />
+                  <span>UK & Europe Coverage</span>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -121,10 +141,10 @@ export function Home() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 md:gap-6 text-center divide-x-0 md:divide-x divide-white/10">
             {[
-              { icon: <ShieldCheck className="text-brand-accent w-8 h-8" />, title: "Fully Insured" },
+              { icon: <ShieldCheck className="text-brand-accent w-8 h-8" />, title: "Secure & Insured" },
               { icon: <ThumbsUp className="text-brand-accent w-8 h-8" />, title: "5-Star Rated" },
-              { icon: <Clock className="text-brand-accent w-8 h-8" />, title: "On-Time Service" },
-              { icon: <MapPin className="text-brand-accent w-8 h-8" />, title: "Nationwide" }
+              { icon: <Clock className="text-brand-accent w-8 h-8" />, title: "Punctual & Reliable" },
+              { icon: <MapPin className="text-brand-accent w-8 h-8" />, title: "UK Wide Coverage" }
             ].map((item, idx) => (
               <motion.div 
                 key={idx}
@@ -151,7 +171,7 @@ export function Home() {
             <p className="text-slate-600 text-lg">From local flat moves to large corporate relocations, we provide end-to-end services designed to make your move effortless.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, idx) => (
               <motion.div 
                 key={idx}
@@ -360,7 +380,7 @@ export function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Testimonials</h2>
             <h3 className="text-4xl md:text-5xl font-display font-bold mb-6">Trusted by Hundreds</h3>
-            <p className="text-slate-300 text-lg">Don't just take our word for it. See what our clients have to say about their moving experience with CCM Supreme Removals.</p>
+            <p className="text-slate-300 text-lg">Real customer feedback from completed moves. See what our clients have to say about their stress-free experience with CCM Supreme Removals.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -394,7 +414,7 @@ export function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="https://www.google.com/search?sca_esv=d1a2c1eff646079b&sxsrf=AE3TifOyixhGi_w0w-sazmVg5V3u3tZFhQ:1762300841468&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2aIuwyAm2PkKvsW7mpL0UMatCavGO4kbm0pRR1CerfqEkzb6B2HBDH_JP2hojV6r_fA61ae8j9koa7kuPb5jd5oCeElXiHPSEPaSLBx6plSCIArOA%3D%3D&q=CCM+Supreme+Removals+Recenzii&sa=X&ved=2ahUKEwj7qJKd2tmQAxWgW0EAHcunLeQQ0bkNegQIIRAE&biw=1920&bih=911&dpr=1"
+              href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-brand-navy hover:bg-slate-100 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
@@ -403,7 +423,7 @@ export function Home() {
               READ MORE REVIEWS
             </a>
             <a 
-              href="https://www.google.com/search?newwindow=1&sca_esv=7ffe021d2eae6c1f&authuser=4&sxsrf=ANbL-n67WByunzIYISPTLt4-wAY8mkscBg:1774054234976&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORPoA7iWHvSmLjLOa9T2642hE0WvSFnxIGH-GizZsyo8aKtD_0YLuChyMo9jH_Eu81OlAosVgO4VBrmi1GGLfrMprwD2bPCeAdJHAl4mxiIkGvKoNA%3D%3D&q=CCM+Supreme+Removals+Reviews&sa=X&ved=2ahUKEwjdtPOD46-TAxWjV0EAHaR3IVEQ0bkNegQIIBAH&biw=1920&bih=911&dpr=1"
+              href="https://www.google.com/search?q=CCM+Supreme+Removals+Reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-brand-accent text-white hover:bg-brand-accent-hover font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
