@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { Home, Building2, Package, Wrench, MapPin, Archive } from "lucide-react";
+import { Home, Building2, Package, Truck, Wrench, Box, MapPin, Archive } from "lucide-react";
 import { Button } from "../components/Button";
 import { useIsMobile } from "../hooks/useIsMobile";
 import { SEO } from "../components/SEO";
@@ -56,7 +56,7 @@ export function Services() {
 
   return (
     <div className="w-full">
-      <SEO
+      <SEO 
         title="Our Services | House Removals, Packing & Storage | CCM Supreme Removals"
         description="Explore our range of professional moving services including local and long-distance removals, office relocations, packing, and secure storage solutions."
         canonical="https://ccmsupremeremovals.co.uk/services"
@@ -64,10 +64,10 @@ export function Services() {
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <motion.img
+          <motion.img 
             style={isMobile ? { scale: 1.05 } : { y: y1, scale: 1.2 }}
-            src="/images/packing-boxes-house-removals-service.jpg"
-            alt="Movers packing boxes"
+            src="/images/packing-boxes-house-removals-service.jpg" 
+            alt="Movers packing boxes" 
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
@@ -91,7 +91,7 @@ export function Services() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {servicesList.map((service, idx) => (
-              <motion.div
+              <motion.div 
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -109,10 +109,10 @@ export function Services() {
                     <h2 className="text-xl font-display font-bold text-white">{service.title}</h2>
                   </div>
                 </div>
-
+                
                 <div className="p-6 md:p-8 flex-1 flex flex-col">
                   <p className="text-slate-600 leading-relaxed flex-1">{service.desc}</p>
-
+                  
                   <div className="pt-6 border-t border-slate-100 mt-6">
                     <ul className="flex flex-wrap gap-2">
                       {service.features.map((feature, fIdx) => (
