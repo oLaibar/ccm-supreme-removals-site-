@@ -440,7 +440,7 @@ export function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-brand-navy hover:bg-slate-100 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
             >
-              <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5" />
+              <img src="/images/google logo.png" alt="Google" className="w-5 h-5" />
               READ MORE REVIEWS
             </a>
             <a 
@@ -449,7 +449,7 @@ export function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-brand-accent text-white hover:bg-brand-accent-hover font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
             >
-              <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
+              <img src="/images/google logo.png" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
               LEAVE A REVIEW
             </a>
           </div>
@@ -464,7 +464,7 @@ export function Home() {
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
             <a href="https://share.google/oPzvRk3xeAl26QTZx" target="_blank" rel="noopener noreferrer" className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 hover:-translate-y-1" aria-label="Google">
-              <img src="/images/google-2015-logo.svg" alt="Google" className="h-8 md:h-10 object-contain" />
+              <img src="/images/google logo.png" alt="Google" className="h-8 md:h-10 object-contain" />
             </a>
             <a href="https://www.bark.com/en/gb/b/ccm-supreme-removals/oV9G9/" target="_blank" rel="noopener noreferrer" className="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 flex items-start select-none" aria-label="Bark">
               <span className="text-3xl md:text-4xl font-bold text-[#00B6FF] tracking-tighter leading-none" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>bark</span>

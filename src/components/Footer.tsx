@@ -16,7 +16,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 bg-white text-brand-navy hover:bg-slate-100 font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-premium-hover hover:-translate-y-1 text-base w-full sm:w-auto min-h-[44px] shrink-0"
           >
-            <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5" />
+            <img src="/images/google logo.png" alt="Google" className="w-5 h-5" />
             Leave a Google Review
           </a>
         </div>
@@ -126,7 +126,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-brand-accent transition-colors bg-white/5 px-4 py-2 rounded-lg border border-white/10"
               >
-                <img src="/images/google-g-logo.svg" alt="Google" className="w-4 h-4" />
+                <img src="/images/google logo.png" alt="Google" className="w-4 h-4" />
                 Read our Google Reviews
               </a>
             </div>
