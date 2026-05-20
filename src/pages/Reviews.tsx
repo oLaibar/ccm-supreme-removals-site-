@@ -56,7 +56,7 @@ export function Reviews() {
                 </div>
               </div>
               <p className="text-slate-600 font-bold text-sm tracking-wider uppercase flex items-center gap-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5" />
+                <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5" />
                 GOOGLE RATING
               </p>
             </div>
@@ -94,7 +94,7 @@ export function Reviews() {
                       <span className="text-xs text-slate-300 uppercase tracking-wider font-medium">Verified Customer</span>
                     </div>
                   </div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
+                  <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
                 </div>
               </motion.div>
             ))}
@@ -107,7 +107,7 @@ export function Reviews() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-brand-blue text-white hover:bg-blue-900 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
+              <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5 bg-white rounded-full p-0.5" />
               READ ALL REVIEWS
             </a>
             <a 
@@ -116,7 +116,7 @@ export function Reviews() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-white text-brand-navy border-2 border-brand-navy hover:bg-slate-50 font-semibold px-6 sm:px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-premium-hover hover:-translate-y-1 text-sm sm:text-base w-full sm:w-auto min-h-[44px]"
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5" />
+              <img src="/images/google-g-logo.svg" alt="Google" className="w-5 h-5" />
               LEAVE A REVIEW
             </a>
           </div>
