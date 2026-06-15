@@ -8,7 +8,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Tips", path: "/tips" },
+  { name: "How it works", path: "/how-it-works" },
   { name: "FAQ", path: "/faq" },
   { name: "Reviews", path: "/reviews" },
   { name: "Contact", path: "/contact" },

@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
 import { ArrowRight, Home, FileQuestion } from "lucide-react";
 import { Button } from "../components/Button";
 import { SEO } from "../components/SEO";
@@ -10,7 +9,7 @@ export function NotFound() {
       <SEO 
         title="Page Not Found | CCM Supreme Removals"
         description="Sorry, the page you are looking for cannot be found. It may have been moved, renamed, or the link may be incorrect."
-        canonical="https://ccmsupremeremovals.co.uk/404"
+        canonical="https://www.ccmsupremeremovals.co.uk/404"
       />
 
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden min-h-[70vh] flex items-center">

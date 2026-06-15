@@ -13,6 +13,10 @@ export function SEO({ title, description, canonical, schema }: SEOProps) {
       <title>{title}</title>
       <meta name="description" content={description} />
       {canonical && <link rel="canonical" href={canonical} />}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      {canonical && <meta property="og:url" content={canonical} />}
+      <meta property="og:type" content="website" />
       {schema && (
         <script type="application/ld+json">
           {JSON.stringify(schema)}

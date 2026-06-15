@@ -17,7 +17,7 @@ export function About() {
       <SEO 
         title="About Us | CCM Supreme Removals | Trusted UK Movers"
         description="Learn more about CCM Supreme Removals, your trusted partner for professional, reliable, and stress-free house and office removals across the UK."
-        canonical="https://ccmsupremeremovals.co.uk/about"
+        canonical="https://www.ccmsupremeremovals.co.uk/about"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">

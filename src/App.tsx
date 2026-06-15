@@ -12,7 +12,7 @@ import { BackToTopButton } from "./components/BackToTopButton";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
-import { Tips } from "./pages/Tips";
+import { HowItWorks } from "./pages/HowItWorks";
 import { Contact } from "./pages/Contact";
 import { Reviews } from "./pages/Reviews";
 import { Quote } from "./pages/Quote";
@@ -31,7 +31,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
-            <Route path="tips" element={<Tips />} />
+            <Route path="how-it-works" element={<HowItWorks />} />
             <Route path="contact" element={<Contact />} />
             <Route path="reviews" element={<Reviews />} />
             <Route path="quote" element={<Quote />} />

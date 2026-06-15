@@ -59,7 +59,7 @@ export function Services() {
       <SEO 
         title="Our Services | House Removals, Packing & Storage | CCM Supreme Removals"
         description="Explore our range of professional moving services including local and long-distance removals, office relocations, packing, and secure storage solutions."
-        canonical="https://ccmsupremeremovals.co.uk/services"
+        canonical="https://www.ccmsupremeremovals.co.uk/services"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">

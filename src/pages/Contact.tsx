@@ -14,7 +14,7 @@ export function Contact() {
       <SEO 
         title="Contact Us | CCM Supreme Removals"
         description="Get in touch with CCM Supreme Removals for a free quote on your house move, office relocation, or packing services. Call us or send a message today."
-        canonical="https://ccmsupremeremovals.co.uk/contact"
+        canonical="https://www.ccmsupremeremovals.co.uk/contact"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">

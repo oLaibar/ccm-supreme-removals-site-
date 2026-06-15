@@ -75,12 +75,12 @@ export function Home() {
       <SEO 
         title="CCM Supreme Removals | Professional House Removals & Man and Van UK"
         description="Top-rated removals company in the UK offering stress-free house removals, man and van services, office relocations, and professional packing. Get a free quote today!"
-        canonical="https://ccmsupremeremovals.co.uk/"
+        canonical="https://www.ccmsupremeremovals.co.uk/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MovingCompany",
           "name": "CCM Supreme Removals",
-          "image": "https://ccmsupremeremovals.co.uk/images/ccm-removals-trucks-house.jpg",
+          "image": "https://www.ccmsupremeremovals.co.uk/images/ccm-removals-trucks-house.jpg",
           "description": "Top-rated removals company in the UK offering stress-free house removals, man and van services, office relocations, and professional packing.",
           "address": {
             "@type": "PostalAddress",
@@ -88,7 +88,7 @@ export function Home() {
           },
           "telephone": "+44 7838 191826",
           "email": "info@ccmsupremeremovals.com",
-          "url": "https://ccmsupremeremovals.co.uk/",
+          "url": "https://www.ccmsupremeremovals.co.uk/",
           "priceRange": "££"
         }}
       />

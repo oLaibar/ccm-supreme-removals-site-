@@ -30,7 +30,7 @@ const tipsList = [
   }
 ];
 
-export function Tips() {
+export function HowItWorks() {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, 50]);
   const isMobile = useIsMobile();
@@ -38,9 +38,9 @@ export function Tips() {
   return (
     <div className="w-full">
       <SEO 
-        title="Moving Tips & Advice | CCM Supreme Removals"
+        title="How it Works | CCM Supreme Removals"
         description="Expert moving tips and advice to help you prepare for a smooth, stress-free house move. Learn how to pack, declutter, and plan your relocation."
-        canonical="https://ccmsupremeremovals.co.uk/tips"
+        canonical="https://www.ccmsupremeremovals.co.uk/how-it-works"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">
@@ -59,7 +59,7 @@ export function Tips() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6">Moving Tips</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold mb-6">How it Works / Moving Tips</h1>
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto">
               Expert advice to help you prepare for a smooth, stress-free moving day.
             </p>

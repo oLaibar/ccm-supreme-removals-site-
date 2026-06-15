@@ -22,7 +22,7 @@ export function Reviews() {
       <SEO 
         title="Customer Reviews | CCM Supreme Removals"
         description="Read what our satisfied customers have to say about their stress-free moving experience with CCM Supreme Removals. 5-star rated service."
-        canonical="https://ccmsupremeremovals.co.uk/reviews"
+        canonical="https://www.ccmsupremeremovals.co.uk/reviews"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">

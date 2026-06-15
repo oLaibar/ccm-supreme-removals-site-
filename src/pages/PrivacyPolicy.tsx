@@ -7,7 +7,7 @@ export function PrivacyPolicy() {
       <SEO 
         title="Privacy Policy | CCM Supreme Removals"
         description="Learn how CCM Supreme Removals collects, uses, and protects your personal information when you use our website and services."
-        canonical="https://ccmsupremeremovals.co.uk/privacy-policy"
+        canonical="https://www.ccmsupremeremovals.co.uk/privacy-policy"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-28 pb-12 relative overflow-hidden">
@@ -45,7 +45,7 @@ export function PrivacyPolicy() {
               This Privacy Notice for <strong>CCM Supreme Removals Ltd</strong> ('<strong>we</strong>', '<strong>us</strong>', or '<strong>our</strong>'), describes how and why we might access, collect, store, use, and/or share ('<strong>process</strong>') your personal information when you use our services ('<strong>Services</strong>'), including when you:
             </p>
             <ul>
-              <li>Visit our website at <a href="https://ccmsupremeremovals.co.uk" target="_blank" rel="noopener noreferrer">https://ccmsupremeremovals.co.uk</a> or any website of ours that links to this Privacy Notice</li>
+              <li>Visit our website at <a href="https://www.ccmsupremeremovals.co.uk" target="_blank" rel="noopener noreferrer">https://www.ccmsupremeremovals.co.uk</a> or any website of ours that links to this Privacy Notice</li>
               <li>Engage with us in other related ways, including any marketing or events</li>
             </ul>
             <p>
@@ -62,7 +62,7 @@ export function PrivacyPolicy() {
             <p><strong>In what situations and with which types of parties do we share personal information?</strong> We may share information in specific situations and with specific categories of third parties.</p>
             <p><strong>How do we keep your information safe?</strong> We have adequate organisational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorised third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.</p>
             <p><strong>What are your rights?</strong> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information.</p>
-            <p><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by visiting <a href="https://ccmsupremeremovals.co.uk/contact" target="_blank" rel="noopener noreferrer">https://ccmsupremeremovals.co.uk/contact</a>, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.</p>
+            <p><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by visiting <a href="https://www.ccmsupremeremovals.co.uk/contact" target="_blank" rel="noopener noreferrer">https://www.ccmsupremeremovals.co.uk/contact</a>, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.</p>
 
             <h2 id="toc">TABLE OF CONTENTS</h2>
             <ol>
@@ -213,7 +213,7 @@ export function PrivacyPolicy() {
             </p>
 
             <h2 id="request">15. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
-            <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: <a href="https://ccmsupremeremovals.co.uk/contact" target="_blank" rel="noopener noreferrer">https://ccmsupremeremovals.co.uk/contact</a>.</p>
+            <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: <a href="https://www.ccmsupremeremovals.co.uk/contact" target="_blank" rel="noopener noreferrer">https://www.ccmsupremeremovals.co.uk/contact</a>.</p>
 
             <div className="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-500">
               This Privacy Policy was created using Termly's <a href="https://termly.io/products/privacy-policy-generator/" target="_blank" rel="noopener noreferrer">Privacy Policy Generator</a>.

@@ -13,7 +13,7 @@ export function Quote() {
       <SEO 
         title="Get a Free Removals Quote | CCM Supreme Removals"
         description="Request a free, no-obligation quote for your house move, office relocation, or packing services. Fast response, no hidden fees, fully insured."
-        canonical="https://ccmsupremeremovals.co.uk/quote"
+        canonical="https://www.ccmsupremeremovals.co.uk/quote"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-28 pb-12 relative overflow-hidden">

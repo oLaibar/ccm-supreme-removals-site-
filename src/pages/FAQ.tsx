@@ -95,7 +95,7 @@ export function FAQ() {
       <SEO 
         title="Frequently Asked Questions | CCM Supreme Removals"
         description="Find answers to common questions about our house removal, packing, and storage services. Learn more about costs, insurance, and how to prepare for your move."
-        canonical="https://ccmsupremeremovals.co.uk/faq"
+        canonical="https://www.ccmsupremeremovals.co.uk/faq"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-32 pb-20 relative overflow-hidden">

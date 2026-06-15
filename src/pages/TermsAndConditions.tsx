@@ -7,7 +7,7 @@ export function TermsAndConditions() {
       <SEO 
         title="Terms and Conditions | CCM Supreme Removals"
         description="Read the terms and conditions for using CCM Supreme Removals services, including bookings, payments, liability, and storage."
-        canonical="https://ccmsupremeremovals.co.uk/terms-and-conditions"
+        canonical="https://www.ccmsupremeremovals.co.uk/terms-and-conditions"
       />
       {/* HEADER */}
       <section className="bg-brand-navy text-white pt-28 pb-12 relative overflow-hidden">
