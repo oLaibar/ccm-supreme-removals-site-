@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform, useInView } from "motion/react";
-import { ArrowRight, ShieldCheck, Clock, ThumbsUp, MapPin, Package, Truck, Home as HomeIcon, Building2, Star, FileText, Calendar, Users, Award } from "lucide-react";
+import { ArrowRight, ShieldCheck, Clock, ThumbsUp, MapPin, Package, Truck, Home as HomeIcon, Building2, Star, FileText, Calendar, Users, Award, Recycle } from "lucide-react";
 import { Button } from "../components/Button";
 import { Link } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
@@ -37,7 +37,7 @@ function AnimatedCounter({ from = 0, to, duration = 4.0, suffix = "", isFloat = 
 
 const stats = [
   { icon: <Truck size={32} />, value: 350, suffix: "+", label: "Moves Completed" },
-  { icon: <Star size={32} />, value: 4.8, suffix: " ★", label: "Google Rating", isFloat: true },
+  { icon: <Star size={32} />, value: 4.9, suffix: " ★", label: "Google Rating", isFloat: true },
   { icon: <Award size={32} />, value: 5, suffix: "+", label: "Years Experience" },
   { icon: <Users size={32} />, value: 300, suffix: "+", label: "Happy Customers" },
 ];
@@ -48,6 +48,7 @@ const services = [
   { icon: <Building2 size={32} />, title: "Office Relocations", desc: "Efficient corporate relocations designed to minimise business downtime." },
   { icon: <Package size={32} />, title: "Packing Services", desc: "Professional packing and unpacking to ensure ultimate care for your items." },
   { icon: <Truck size={32} />, title: "Storage Solutions", desc: "Safe, secure, and flexible storage options for short or long-term needs." },
+  { icon: <Recycle size={32} />, title: "House Clearance", desc: "Clear unwanted furniture, household items, and general belongings with a simple, organised clearance service. Ideal for end-of-tenancy, downsizing, bereavement clearances, or preparing a property for sale or rent.", link: "/services#house-clearance" },
 ];
 
 const steps = [
@@ -89,7 +90,12 @@ export function Home() {
           "telephone": "+44 7838 191826",
           "email": "info@ccmsupremeremovals.com",
           "url": "https://www.ccmsupremeremovals.co.uk/",
-          "priceRange": "££"
+          "priceRange": "££",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5"
+          }
         }}
       />
       {/* HERO SECTION */}
@@ -207,7 +213,7 @@ export function Home() {
                 </div>
                 <h3 className="text-xl font-display font-bold text-brand-navy mb-3">{service.title}</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">{service.desc}</p>
-                <Link to="/services" className="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-brand-accent transition-colors">
+                <Link to={service.link || "/services"} className="inline-flex items-center text-sm font-semibold text-brand-blue group-hover:text-brand-accent transition-colors">
                   Learn more <ArrowRight size={16} className="ml-1" />
                 </Link>
               </motion.div>

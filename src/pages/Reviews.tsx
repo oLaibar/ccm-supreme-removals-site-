@@ -48,7 +48,7 @@ export function Reviews() {
             
             <div className="inline-flex flex-col items-center bg-white p-6 rounded-3xl shadow-2xl border border-slate-100">
               <div className="flex items-center gap-4 mb-3">
-                <span className="text-5xl font-display font-bold text-brand-navy">4.8</span>
+                <span className="text-5xl font-display font-bold text-brand-navy">4.9</span>
                 <div className="flex gap-1 text-[#FFC107]">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={28} fill="currentColor" className="drop-shadow-sm" />

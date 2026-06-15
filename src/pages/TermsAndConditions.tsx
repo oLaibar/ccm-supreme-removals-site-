@@ -6,7 +6,7 @@ export function TermsAndConditions() {
     <div className="w-full">
       <SEO 
         title="Terms and Conditions | CCM Supreme Removals"
-        description="Read the terms and conditions for using CCM Supreme Removals services, including bookings, payments, liability, and storage."
+        description="Read the terms and conditions for CCM Supreme Removals, including service bookings, quotations, removals, cancellations, and customer responsibilities."
         canonical="https://www.ccmsupremeremovals.co.uk/terms-and-conditions"
       />
       {/* HEADER */}

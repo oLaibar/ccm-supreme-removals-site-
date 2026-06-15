@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { Home, Building2, Package, Truck, Wrench, Box, MapPin, Archive } from "lucide-react";
+import { Home, Building2, Package, Truck, Wrench, Box, MapPin, Archive, Recycle, CheckCircle2 } from "lucide-react";
 import { Button } from "../components/Button";
 import { useIsMobile } from "../hooks/useIsMobile";
 import { SEO } from "../components/SEO";
@@ -57,8 +57,8 @@ export function Services() {
   return (
     <div className="w-full">
       <SEO 
-        title="Our Services | House Removals, Packing & Storage | CCM Supreme Removals"
-        description="Explore our range of professional moving services including local and long-distance removals, office relocations, packing, and secure storage solutions."
+        title="Moving Services & House Clearance | CCM Supreme Removals"
+        description="CCM Supreme Removals provides local removals, packing, furniture handling, office moves, and house clearance services across the UK. Get a clear quote today."
         canonical="https://www.ccmsupremeremovals.co.uk/services"
       />
       {/* HEADER */}
@@ -125,6 +125,62 @@ export function Services() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HOUSE CLEARANCE */}
+      <section id="house-clearance" className="py-16 md:py-24 bg-white relative">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="lg:w-1/2">
+              <span className="block text-brand-accent font-semibold tracking-widest uppercase text-sm mb-3">Professional Clearance</span>
+              <h2 className="text-3xl md:text-5xl font-display font-bold text-brand-navy mb-6">House Clearance</h2>
+              <p className="text-slate-600 text-lg mb-6 leading-relaxed">
+                Our House Clearance service helps homeowners, tenants, landlords, and letting agents clear unwanted furniture, household items, and general belongings from properties quickly and carefully. Whether you are moving out, preparing a property for new tenants, downsizing, or dealing with a full property clearance, CCM Supreme Removals can help make the process easier and more organised.
+              </p>
+              
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                {[
+                  "Furniture removal",
+                  "Household item clearance",
+                  "End-of-tenancy clearance",
+                  "Loft, garage, and shed clearance",
+                  "Landlord and letting agent clearances",
+                  "Downsizing support",
+                  "Property preparation before sale or rent",
+                  "Responsible disposal and recycling where possible"
+                ].map((point, idx) => (
+                  <li key={idx} className="flex items-start text-slate-700">
+                    <CheckCircle2 size={20} className="text-brand-accent mr-3 mt-1 flex-shrink-0" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="bg-brand-light p-6 rounded-2xl border border-slate-100 mb-8 flex gap-4 items-start">
+                <div className="w-10 h-10 bg-brand-accent/10 rounded-full flex flex-shrink-0 items-center justify-center mt-1">
+                  <Recycle size={20} className="text-brand-accent" />
+                </div>
+                <p className="text-slate-600 italic">
+                  We aim to reuse, recycle, or dispose of items responsibly wherever possible. If specialist disposal is required, this will be discussed before the job is confirmed.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200">
+                <h3 className="text-xl font-display font-bold text-brand-navy mb-2">Need a property cleared?</h3>
+                <p className="text-slate-600 mb-6">Send us a few details and photos of the items or rooms that need clearing, and we will provide a clear quote.</p>
+                <Button href="/quote" variant="primary">Get a Quote</Button>
+              </div>
+            </div>
+            <div className="lg:w-1/2 w-full h-[400px] lg:h-[600px] relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/furniture-packed-ready-for-removal.jpg" 
+                alt="House Clearance Service" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-brand-navy/10"></div>
+            </div>
           </div>
         </div>
       </section>
